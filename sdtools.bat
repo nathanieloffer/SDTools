@@ -8,7 +8,13 @@ REM # Version: 0.4
 REM #
 REM # Description: Script to enable quick access to network tools
 
+REM # Check and Create Directory
 SETLOCAL
+:checkdir
+IF EXIST C:\Config\SD_Tool\ GOTO PROMPT
+:makedir
+MD C:\Config\SD_Tool\
+:setdir
 SET sdfolder=C:\Config\SD_Tool\
 
 :prompt
